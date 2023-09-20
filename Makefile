@@ -6,18 +6,18 @@
 #    By: rmessner <rmessner@student.42vienna.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/20 13:55:31 by rmessner          #+#    #+#              #
-#    Updated: 2023/09/20 16:35:52 by rmessner         ###   ########.fr        #
+#    Updated: 2023/09/20 17:19:03 by rmessner         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= libftprintf.a
-INCLUDE	= ft_printf.h Libft/libft.h
+INCLUDE	= ft_printf.h
 LIB 	= Libft
 CC		= cc
 CFLAGS	= -Wall -Wextra -Werror
 
 
-SRC = ft_printf.c ft_percent.c ft_printnbr.c ft_proofformat.c ft_putchar.c ft_printstr.c 
+SRC = ft_printf.c ft_percent.c ft_printnbr.c ft_printstr.c 
 OBJ		= $(SRC:.c=.o) 
 
 all: $(NAME)

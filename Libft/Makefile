@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: rmessner <rmessner@student.42.fr>          +#+  +:+       +#+         #
+#    By: rmessner <rmessner@student.42vienna.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/05 10:17:12 by rmessner          #+#    #+#              #
-#    Updated: 2023/09/19 14:36:13 by rmessner         ###   ########.fr        #
+#    Updated: 2023/09/20 17:17:41 by rmessner         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
