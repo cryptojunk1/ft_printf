@@ -6,9 +6,12 @@
 /*   By: rmessner <rmessner@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 16:29:58 by rmessner          #+#    #+#             */
-/*   Updated: 2023/09/20 14:08:14 by rmessner         ###   ########.fr       */
+/*   Updated: 2023/09/20 16:57:09 by rmessner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#ifndef LIBFT_H
+# define LIBFT_H
 
 #include <unistd.h>
 
@@ -46,3 +49,5 @@ char			**ft_split(char const *s, char c);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void			ft_striteri(char *s, void (*f)(unsigned int, char*));
 char			*ft_itoa(int n);
+
+#endif
