@@ -6,7 +6,7 @@
 /*   By: rmessner <rmessner@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 16:29:58 by rmessner          #+#    #+#             */
-/*   Updated: 2023/09/20 17:26:34 by rmessner         ###   ########.fr       */
+/*   Updated: 2023/09/25 12:43:13 by rmessner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 # define LIBFT_H
 
 #include <unistd.h>
+#include <ctype.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int				ft_atoi(const char *str);
 void			ft_bzero(void *str, size_t n);
