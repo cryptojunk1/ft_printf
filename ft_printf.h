@@ -6,7 +6,7 @@
 /*   By: rmessner <rmessner@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 16:49:42 by rmessner          #+#    #+#             */
-/*   Updated: 2023/09/20 17:17:34 by rmessner         ###   ########.fr       */
+/*   Updated: 2023/09/25 15:59:16 by rmessner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdarg.h>
+#include "libft.h"
 
 int		ft_printf(const char *format, ...);
 int	    ft_printnbr(int n);

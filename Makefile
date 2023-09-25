@@ -6,35 +6,30 @@
 #    By: rmessner <rmessner@student.42vienna.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/20 13:55:31 by rmessner          #+#    #+#              #
-#    Updated: 2023/09/20 17:19:03 by rmessner         ###   ########.fr        #
+#    Updated: 2023/09/25 16:26:22 by rmessner         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= libftprintf.a
-INCLUDE	= ft_printf.h
-LIB 	= Libft
-CC		= cc
-CFLAGS	= -Wall -Wextra -Werror
+NAME		= libftprintf.a
+INCLUDE		= ./
+LIBFT		= Libft
+SRC_DIR		= Sources
+CC			= gcc
+CFLAGS		= -Wall -Werror -Wextra -I
 
+all:	$(NAME)
 
-SRC = ft_printf.c ft_percent.c ft_printnbr.c ft_printstr.c 
-OBJ		= $(SRC:.c=.o) 
+$(NAME): $(SRC_DIR)/*.c
+	@make -C $(LIBFT)
+	@cp Libft/libft.a .
+	@cp Libft/libft.h .
+	$(CC) $(CFLAGS) $(INCLUDE) -c $(SRC_DIR)/*.c
+	@ar rcs $(NAME) *.o
+	@echo "Printf compiled"
 
-all: $(NAME)
-
-$(NAME): $(OBJ)
-	echo Compiling: $(NAME)
-	make -C $(LIB)
-	ar rsc $(NAME) $(OBJ)
-	$(CC) $(CFLAGS) -c $(INCLUDE) $(SRC)
 clean:
-	make clean -C $(LIB)
-	rm -f $(OBJ)
-
+	rm -f *.o
+	rm -f $(LIBFT)/*.o
 fclean: clean 
-	make fclean -C $(LIB)
 	rm -f $(NAME)
-
 re: fclean all
-
-.PHONY : all clean fclean re
