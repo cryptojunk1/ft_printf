@@ -6,12 +6,13 @@
 /*   By: rmessner <rmessner@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 11:25:33 by rmessner          #+#    #+#             */
-/*   Updated: 2023/09/25 16:13:10 by rmessner         ###   ########.fr       */
+/*   Updated: 2023/09/26 06:50:02 by rmessner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include <stdlib.h>
+#include "libft.h"
 
 int	ft_putchar(char c)
 {
@@ -34,7 +35,7 @@ int	ft_proofformat(va_list arguments, const char format)
 	}
 	else if (format == 'p')/*Adresse von pointer; Hex; Base 16*/
 	{
-		
+		print = print + ft_printhex(va_arg(arguments, unsigned int), format);
 	}
 	else if (format == 'd' || format == 'i')/*Wenn Dezimalnummer; Base 10 ; itoa, putnbr?*/
 	{

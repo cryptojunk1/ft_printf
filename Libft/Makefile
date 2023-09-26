@@ -6,7 +6,7 @@
 #    By: rmessner <rmessner@student.42vienna.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/05 10:17:12 by rmessner          #+#    #+#              #
-#    Updated: 2023/09/25 16:26:06 by rmessner         ###   ########.fr        #
+#    Updated: 2023/09/25 18:01:18 by rmessner         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@
 NAME = libft.a
 CC	= gcc
 CFLAGS = -Wall -Wextra -Werror
-INCLUDE = ./
+INCLUDE = .
 SRC_DIR = Source
 
 all:	$(NAME)

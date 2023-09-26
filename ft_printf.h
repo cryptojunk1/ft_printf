@@ -6,7 +6,7 @@
 /*   By: rmessner <rmessner@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 16:49:42 by rmessner          #+#    #+#             */
-/*   Updated: 2023/09/25 15:59:16 by rmessner         ###   ########.fr       */
+/*   Updated: 2023/09/26 06:49:13 by rmessner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ int		ft_printf(const char *format, ...);
 int	    ft_printnbr(int n);
 int	    ft_printstr(char *str);
 int     ft_percent(void);
+int		ft_printhex(unsigned int num, const char format);
 
 
 #endif
