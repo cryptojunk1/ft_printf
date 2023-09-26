@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmessner <rmessner@student.42vienna.com    +#+  +:+       +#+        */
+/*   By: rmessner <rmessner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 11:25:33 by rmessner          #+#    #+#             */
-/*   Updated: 2023/09/26 06:53:07 by rmessner         ###   ########.fr       */
+/*   Updated: 2023/09/26 11:24:06 by rmessner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "./ft_printf.h"
 #include <stdlib.h>
-#include "libft.h"
+#include "./libft/libft.h"
 
-int	ft_putchar(char c)
+static int	ft_putchar(char c)
 {
 	write (1, &c, 1);
 	return (1);

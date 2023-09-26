@@ -3,16 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: rmessner <rmessner@student.42vienna.com    +#+  +:+       +#+         #
+#    By: rmessner <rmessner@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/20 13:55:31 by rmessner          #+#    #+#              #
-#    Updated: 2023/09/25 17:00:33 by rmessner         ###   ########.fr        #
+#    Updated: 2023/09/26 11:05:11 by rmessner         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= libftprintf.a
 INCLUDE		= ./
-LIBFT		= Libft
+LIBFT		= libft
 SRC_DIR		= Sources
 CC			= gcc
 CFLAGS		= -Wall -Werror -Wextra -I
@@ -21,8 +21,8 @@ all:	$(NAME)
 
 $(NAME): $(SRC_DIR)/*.c
 	@make -C $(LIBFT)
-	@cp Libft/libft.a .
-	@cp Libft/libft.h .
+	@cp libft/libft.a .
+	@cp libft/libft.h .
 	$(CC) $(CFLAGS) $(INCLUDE) -c $(SRC_DIR)/*.c
 	@ar rcs $(NAME) *.o
 	@echo "Printf compiled"

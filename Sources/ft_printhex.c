@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printhex.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmessner <rmessner@student.42vienna.com    +#+  +:+       +#+        */
+/*   By: rmessner <rmessner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 16:07:31 by rmessner          #+#    #+#             */
-/*   Updated: 2023/09/26 06:47:33 by rmessner         ###   ########.fr       */
+/*   Updated: 2023/09/26 11:13:41 by rmessner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ int ft_printhex(unsigned int num, const char format)
     print = 0;
     if (num == 0)
     {
-        return (ft_putchar("0"));
+        return (write(1, "0", 1));
     }
     else
         ft_puthex(num, format);
