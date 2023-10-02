@@ -6,7 +6,7 @@
 /*   By: rmessner <rmessner@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 11:25:33 by rmessner          #+#    #+#             */
-/*   Updated: 2023/09/26 17:00:28 by rmessner         ###   ########.fr       */
+/*   Updated: 2023/10/02 15:52:34 by rmessner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ int ft_printf(const char *str, ...)
 	return (print); /*Länge zu printen ohne '\0' */
 }
 
+/*
 int	main()
 {
 	char	*test = {"Hallo Welt"};
@@ -62,3 +63,4 @@ int	main()
 	printf("\n");
 
 }
+*/
